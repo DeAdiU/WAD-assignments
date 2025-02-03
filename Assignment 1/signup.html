@@ -217,6 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       users.push(userData);
                       localStorage.setItem('users', JSON.stringify(users));
                       showMessage('Registration successful!', 'success');
+                      window.location.href = 'login.html';
                       signupForm.reset();
                   } else {
                       throw new Error('Registration failed');
